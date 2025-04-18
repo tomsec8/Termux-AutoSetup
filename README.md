@@ -15,7 +15,7 @@ This project provides a centralized script that helps you install multiple Termu
 Before using this toolkit, make sure your system meets the following:
 
 - 📱 **Device:** Android with Termux installed  
-- 🧱 **Storage:** At least 200MB of free space  
+- 🧱 **Storage:** At least 2000MB of free space  
 - 🌐 **Internet Connection:** Required for downloading packages  
 - 🧰 **Permissions:** Run `termux-setup-storage` if you want to access internal storage
 
