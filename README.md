@@ -38,33 +38,17 @@ After installing `git`, follow these steps:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/TomSec8/termux-toolkit-installer.git
+git clone https://github.com/tomsec8/Termux-AutoSetup.git)
 
 # 2. Enter the project directory
-cd termux-toolkit-installer
+cd Termux-AutoSetup
 
 # 3. Give execute permission to the installer script
 chmod +x install.sh
 
 # 4. Run the installer
 bash install.sh
-```
 
----
-
-## 📁 Project Structure
-
-```
-termux-toolkit-installer/
-├── install.sh             # Main script (you will run this)
-├── scripts/
-│   ├── base-tools.sh      # Base tools like git, curl, wget, etc.
-│   ├── hacking-tools.sh   # Offensive/security tools
-│   └── custom-tools.sh    # Special tools not in official repo
-├── assets/                # (Optional) logos or future assets
-├── LICENSE                # Project license (MIT)
-├── README.md              # You're reading this!
-└── .gitignore             # Ignore temp/log files
 ```
 
 ---
