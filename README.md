@@ -26,7 +26,7 @@ Before using this toolkit, make sure your system meets the following:
 Before cloning this project, you must install `git` in Termux:
 
 ```bash
-pkg update -y && pkg upgrade -y
+apt-get update -y && apt-get upgrade -y
 pkg install git -y
 ```
 
