@@ -1,4 +1,4 @@
-# 🛠️ Termux Toolkit Installer
+# 🛠️ Termux-AutoSetup
 
 A modular and beginner-friendly toolkit to set up your Termux environment with essential tools in one click.
 
