@@ -76,3 +76,10 @@ Feel free to open issues or pull requests with suggestions or fixes.
 
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
+---
+
+## 🙏 Credits
+
+This project includes or is inspired by work from:
+
+- [@OtherUser](https://github.com/OtherUser) – Original script: [their-repo](https://github.com/OtherUser/their-repo)
