@@ -3,8 +3,8 @@
 
 # ── colours & symbols ───────────────────────────────────────────────────
 GREEN="\e[32m"; RED="\e[31m"; CYAN="\e[36m"; YELLOW="\e[33m"; NC="\e[0m"
-TICK="\xE2\x9C\x94"   # ✓
-CROSS="\xE2\x9C\x98"  # ✘
+TICK="\xE2\x9C\x94"    # ✓
+CROSS="\xE2\x9C\x98"   # ✘
 
 # ── list of base tools to ensure ────────────────────────────────────────
 TOOLS=(
@@ -19,9 +19,8 @@ is_installed() { command -v "$1" >/dev/null 2>&1; }
 
 # ── pretty status table ─────────────────────────────────────────────────
 print_table() {
-  local title="$1"
-  shift
-  local -n arr=$1   # name‑reference (bash ≥4.3)
+  local title="$1"; shift
+  local -n arr=$1          # name‑reference (bash ≥4.3)
 
   echo -e "\n${CYAN}═══ $title ═════════════════════${NC}"
   printf "%-18s | %-8s\n" "Tool" "Status"
@@ -37,13 +36,15 @@ print_table() {
 
 # ── enable extra repositories once ──────────────────────────────────────
 enable_repos() {
-  if ! grep -q "x11" "$PREFIX/etc/apt/sources.list.d/game.list" 2>/dev/null; then
-    echo -e "${CYAN}[•] Enabling x11‑repo and unstable‑repo…${NC}"
+  # X11 and unstable repos
+  if ! grep -q "x11-repo" "$PREFIX/etc/apt/sources.list.d/x11.list" 2>/dev/null; then
+    echo -e "${CYAN}[•] Enabling x11‑repo & unstable‑repo…${NC}"
     pkg install -y x11-repo unstable-repo
     pkg update -y
   fi
-  # root‑repo only makes sense on rooted devices
-  if [[ "$(id -u)" -eq 0 ]]; then
+  # root‑repo only on rooted devices
+  if [[ "$(id -u)" -eq 0 ]] && ! grep -q "root-repo" "$PREFIX/etc/apt/sources.list.d/root.list" 2>/dev/null; then
+    echo -e "${CYAN}[•] Enabling root‑repo…${NC}"
     pkg install -y root-repo && pkg update -y
   fi
 }
@@ -54,7 +55,6 @@ install_missing() {
   for tool in "${TOOLS[@]}"; do
     is_installed "$tool" || missing+=("$tool")
   done
-
   if (( ${#missing[@]} )); then
     echo -e "\n${CYAN}[•] Installing missing tools…${NC}"
     pkg install -y "${missing[@]}"
@@ -85,6 +85,6 @@ else
 fi
 
 pkg autoclean
-echo -e "\nPress any key to return to the main menu..."
+echo -e "\nPress any key to return to the main menu…"
 read -n1 -s
 exit 0
