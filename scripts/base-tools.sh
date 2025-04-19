@@ -3,24 +3,23 @@
 
 # ── colours & symbols ───────────────────────────────────────────────────
 GREEN="\e[32m"; RED="\e[31m"; CYAN="\e[36m"; YELLOW="\e[33m"; NC="\e[0m"
-TICK="\xE2\x9C\x94"    # ✓
-CROSS="\xE2\x9C\x98"   # ✘
+TICK="\xE2\x9C\x94";   CROSS="\xE2\x9C\x98"
 
-# ── list of base tools to ensure ────────────────────────────────────────
-TOOLS=(
-  curl wget git nano vim neovim
-  zip unzip tar
-  python net-tools grep httping
-  openssh termux-api
-)
+# ── playback speed (seconds per line) ───────────────────────────────────
+SLEEP=0.25       # ← שינוי כאן יזרז/יאט את האנימציה
 
-# ── helper: check if a tool exists ──────────────────────────────────────
+# ── list of base tools ─────────────────────────────────────────────────
+TOOLS=( curl wget git nano vim neovim
+        zip unzip tar
+        python net-tools grep httping
+        openssh termux-api )
+
 is_installed() { command -v "$1" >/dev/null 2>&1; }
 
-# ── pretty status table ─────────────────────────────────────────────────
+# ── pretty status table with pacing ─────────────────────────────────────
 print_table() {
   local title="$1"; shift
-  local -n arr=$1          # name‑reference (bash ≥4.3)
+  local -n arr=$1               # name‑reference
 
   echo -e "\n${CYAN}═══ $title ═════════════════════${NC}"
   printf "%-18s | %-8s\n" "Tool" "Status"
@@ -31,9 +30,9 @@ print_table() {
     else
       printf "%-18s | ${RED}%b MISSING${NC}\n" "$tool" "$CROSS"
     fi
+    sleep "$SLEEP"              # ← ההשהיה החדשה
   done
 }
-
 # ── enable extra repositories once ──────────────────────────────────────
 enable_repos() {
   # X11 and unstable repos
