@@ -38,7 +38,7 @@ After installing `git`, follow these steps:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/tomsec8/Termux-AutoSetup.git)
+git clone https://github.com/tomsec8/Termux-AutoSetup.git
 
 # 2. Enter the project directory
 cd Termux-AutoSetup
