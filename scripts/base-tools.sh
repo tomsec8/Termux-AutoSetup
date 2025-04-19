@@ -10,7 +10,7 @@ SLEEP=0.25
 # ── list of base tools ─────────────────────────────────────────────────
 TOOLS=( curl wget git nano
         zip unzip tar
-        python net-tools grep httping )
+        python grep httping )
 
 is_installed() { command -v "$1" >/dev/null 2>&1; }
 
