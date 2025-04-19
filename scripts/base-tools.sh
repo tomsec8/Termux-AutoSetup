@@ -9,7 +9,7 @@ TICK="\xE2\x9C\x94";   CROSS="\xE2\x9C\x98"
 SLEEP=0.25       
 # ── list of base tools ─────────────────────────────────────────────────
 TOOLS=( curl wget git nano
-        zip unzip tar
+        zip vim unzip tar
         python grep httping )
 
 is_installed() { command -v "$1" >/dev/null 2>&1; }
