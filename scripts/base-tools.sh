@@ -6,8 +6,7 @@ GREEN="\e[32m"; RED="\e[31m"; CYAN="\e[36m"; YELLOW="\e[33m"; NC="\e[0m"
 TICK="\xE2\x9C\x94";   CROSS="\xE2\x9C\x98"
 
 # ── playback speed (seconds per line) ───────────────────────────────────
-SLEEP=0.25       # ← שינוי כאן יזרז/יאט את האנימציה
-
+SLEEP=0.25       
 # ── list of base tools ─────────────────────────────────────────────────
 TOOLS=( curl wget git nano vim neovim
         zip unzip tar
@@ -30,7 +29,7 @@ print_table() {
     else
       printf "%-18s | ${RED}%b MISSING${NC}\n" "$tool" "$CROSS"
     fi
-    sleep "$SLEEP"              # ← ההשהיה החדשה
+    sleep "$SLEEP"              
   done
 }
 # ── enable extra repositories once ──────────────────────────────────────
