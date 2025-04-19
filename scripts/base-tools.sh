@@ -6,7 +6,7 @@ GREEN="\e[32m"; RED="\e[31m"; CYAN="\e[36m"; YELLOW="\e[33m"; NC="\e[0m"
 TICK="\xE2\x9C\x94";   CROSS="\xE2\x9C\x98"
 
 # ── playback speed (seconds per line) ───────────────────────────────────
-SLEEP=0.25       
+SLEEP=0.6       
 # ── list of base tools ─────────────────────────────────────────────────
 TOOLS=( curl wget git nano
         zip vim unzip tar
