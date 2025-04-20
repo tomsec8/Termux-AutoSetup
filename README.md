@@ -60,7 +60,7 @@ During installation, you'll be able to choose one or more of the following:
 | Category         | Description                                             |
 |------------------|---------------------------------------------------------|
 | 🧰 Base Tools     | Essential CLI tools (`curl`, `nano`, `wget`, `zip`, `vim`, `unzip`, `tar`, `python`, `grep`, `httping`) |
-| ⚔️ Hacking Tools  | Security tools (`nmap`, `sqlmap`, `hydra`, etc.)         |
+| ⚔️ Hacking Tools  | Security tools (`nmap`, `dnsmap`, `dirb`, `apksigner`, `crunch`, `netcat-openbsd` )         |
 | 🛠️ special Tools   | Tools from GitHub or custom-built tools                 |
 
 ---
@@ -76,7 +76,7 @@ Feel free to open issues or pull requests with suggestions or fixes.
 
 This project includes or is inspired by work from:
 
-- [@OtherUser](https://github.com/OtherUser) – Original script: [their-repo](https://github.com/OtherUser/their-repo)
+- [@gushmazuko](https://github.com/gushmazuko) – Metasploit install script: [metasploit_in_termux](https://github.com/gushmazuko/metasploit_in_termux)
 
 ---
 
