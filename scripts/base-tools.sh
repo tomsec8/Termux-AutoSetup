@@ -11,7 +11,8 @@ SLEEP=0.6
 TOOLS=( curl wget git nano
         zip vim unzip tar
         python grep httping build-essential
-        perl clang make )
+        perl clang make
+        python2 tsu)
 
 is_installed() { command -v "$1" >/dev/null 2>&1; }
 
