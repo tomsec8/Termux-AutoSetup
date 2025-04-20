@@ -54,7 +54,7 @@ install_missing() {
     echo -e "\n${CYAN}[•] Installing missing tools…${NC}"
     pkg install -y "${missing[@]}"
   else
-    echo -e "\n${GREEN}[✓] All base tools already present.${NC}"
+    echo -e "\n${GREEN}[✓] All hacking tools already present.${NC}"
   fi
 }
 
@@ -76,7 +76,7 @@ if (( ${#leftovers[@]} )); then
   echo -e "\n${YELLOW}[!] These tools failed to install:${NC} ${leftovers[*]}"
   echo -e "${YELLOW}    Try running the script again or check your network.${NC}"
 else
-  echo -e "\n${GREEN}[✓] Base toolset ready – everything installed successfully!${NC}"
+  echo -e "\n${GREEN}[✓] hacking toolset ready – everything installed successfully!${NC}"
 fi
 
 pkg autoclean
