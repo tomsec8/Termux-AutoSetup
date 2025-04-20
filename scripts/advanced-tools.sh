@@ -10,7 +10,7 @@ while true; do
   echo -e "${CYAN}====== Advanced Tools Menu ======${NC}"
   echo "1) Install Metasploit"
   echo "2) Install sqlmap"
-  echo "3) Install Aircrack-ng"
+  echo "3) Install nikto"
   echo "0) Back to main menu"
   echo
   read -p "Select a tool to install: " choice
