@@ -26,6 +26,7 @@ while true; do
         chmod +x metasploit.sh
         ./metasploit.sh
         echo -e "${GREEN}✓ Metasploit installed successfully!${NC}"
+        echo -e "${GREEN}After installation start Metasploit using the command: msfconsole${NC}"
       else
         echo -e "${YELLOW}✗ Installation cancelled.${NC}"
       fi ;;
