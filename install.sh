@@ -8,7 +8,7 @@ main_menu() {
     clear
     echo -e "${CYAN}====== Termux‑AutoSetup ======${NC}"
     echo "1) Install base tools"
-    echo "2) Install hacking tools        (coming soon)"
+    echo "2) Install hacking tools"
     echo "3) Advanced tools (individual)  (coming soon)"
     echo "0) Exit"
     echo
