@@ -9,7 +9,7 @@ main_menu() {
     echo -e "${CYAN}====== Termux‑AutoSetup ======${NC}"
     echo "1) Install base tools"
     echo "2) Install hacking tools"
-    echo "3) Advanced tools (individual)  (coming soon)"
+    echo "3) Advanced tools (individual)"
     echo "0) Exit"
     echo
     read -rp "Choose an option: " choice
