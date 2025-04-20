@@ -48,14 +48,17 @@ while true; do
         echo -e "${YELLOW}✗ Installation cancelled.${NC}"
       fi ;;
     3)
-      read -p "Are you sure you want to install Aircrack-ng? (y/n): " confirm
+      read -p "Are you sure you want to install nikto? (y/n): " confirm
       if [ "$confirm" == "y" ]; then
         clear
-        echo -e "${CYAN}Installing: AIRCRACK-NG${NC}"
+        echo -e "${CYAN}Installing: nikto${NC}"
         sleep 2
-        pkg install -y root-repo
-        pkg install -y aircrack-ng
-        echo -e "${GREEN}✓ Aircrack-ng installed successfully!${NC}"
+        mkdir -p $HOME/tools
+        cd $HOME/tools
+        git clone https://github.com/sullo/nikto.git
+        cd nikto
+        echo -e "${GREEN}✓ nikto installed successfully!${NC}"
+        echo -e "${GREEN}After installation start nikto using the command: perl nikto.pl -h example.com${NC}"
       else
         echo -e "${YELLOW}✗ Installation cancelled.${NC}"
       fi ;;
