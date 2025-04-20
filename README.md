@@ -59,7 +59,7 @@ During installation, you'll be able to choose one or more of the following:
 
 | Category         | Description                                             |
 |------------------|---------------------------------------------------------|
-| 🧰 Base Tools     | Essential CLI tools (`git`, `curl`, `nano`, `wget`, etc.) |
+| 🧰 Base Tools     | Essential CLI tools (`curl`, `nano`, `wget`, 'zip', 'vim', 'unzip', 'tar', 'python', 'grep', 'httping') |
 | ⚔️ Hacking Tools  | Security tools (`nmap`, `sqlmap`, `hydra`, etc.)         |
 | 🛠️ special Tools   | Tools from GitHub or custom-built tools                 |
 
