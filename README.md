@@ -61,7 +61,7 @@ During installation, you'll be able to choose one or more of the following:
 |------------------|---------------------------------------------------------|
 | 🧰 Base Tools     | Essential CLI tools (`curl`, `nano`, `wget`, `zip`, `vim`, `unzip`, `tar`, `python`, `grep`, `httping`, `build-essential`, `perl`, `clang`, `make`, `tsu`, `python2` ) |
 | ⚔️ Hacking Tools  | Security tools (`nmap`, `dnsmap`, `dirb`, `apksigner`, `crunch`, `netcat-openbsd` )         |
-| 🛠️ special Tools   | Tools from GitHub or custom-built tools                 |
+| 🛠️ special Tools   | Tools from GitHub or custom-built tools (`metasploit`, `sqlmap`, `nikto`)                |
 
 ---
 
