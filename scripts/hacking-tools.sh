@@ -7,7 +7,7 @@ TICK="\xE2\x9C\x94";   CROSS="\xE2\x9C\x98"
 
 # ── playback speed (seconds per line) ───────────────────────────────────
 SLEEP=0.6       
-# ── list of base tools ─────────────────────────────────────────────────
+# ── list of tools ─────────────────────────────────────────────────
 TOOLS=( nmap dnsmap dirb apksigner crunch netcat-openbsd  )
 
 is_installed() { command -v "$1" >/dev/null 2>&1; }
