@@ -77,6 +77,7 @@ Feel free to open issues or pull requests with suggestions or fixes.
 This project includes or is inspired by work from:
 
 - [@gushmazuko](https://github.com/gushmazuko) – Metasploit install script: [metasploit_in_termux](https://github.com/gushmazuko/metasploit_in_termux)
+- [@sqlmapproject](https://github.com/sqlmapproject) – SQLMap tool: [sqlmap](https://github.com/sqlmapproject/sqlmap)
 
 ---
 
